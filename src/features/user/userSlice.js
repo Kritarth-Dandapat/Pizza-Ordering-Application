@@ -4,7 +4,7 @@
 //   });
 // }
 
-import { createSlice } from "@reduxjs/toolkit";
+
 
 // async function fetchAddress() {
 //   // 1) We get the user's geolocation position
@@ -23,6 +23,8 @@ import { createSlice } from "@reduxjs/toolkit";
 // }
 
 
+import { createSlice } from "@reduxjs/toolkit";
+
 const initialState ={
   username: '',
 
@@ -36,4 +38,8 @@ const userSlice = createSlice({
       state.username = action.payload
     }
   }
-})
+});
+
+export const {updateName} = userSlice.actions;
+
+export default userSlice.reducer;

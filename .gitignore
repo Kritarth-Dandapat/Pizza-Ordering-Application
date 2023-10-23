@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+postcss.config.js
+prettier.config.cjs
+vite.config.js
+package.json
+.gitattributes
+.eslintrc.json
